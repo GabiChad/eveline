@@ -1,0 +1,192 @@
+body {
+    font-family: "seismic-latin-variable", sans-serif;
+    font-variation-settings: "SEIS" 0, "wght" 400;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* Background Video Section */
+  video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  /* Navigation Bar */
+  nav a {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 60px;
+    background-color: #a42b0e;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #003399;
+}
+
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  flex-direction: row;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 60px;
+  padding-right: 5px;
+  padding-bottom: 0;
+}
+
+.nav-list li {
+  margin-top: 40px;
+}
+
+.nav-list a {
+  font-family: "panel-mono", monospace;
+  font-weight: 100;
+  font-style: italic;
+      font-size: 20px;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .nav-container, .nav-list a {
+      display: flex;
+      font-size: 4px;
+      margin-right: 5px;
+  }
+}
+
+ /* .members-header {
+    font-family: "seismic-latin-variable", sans-serif;
+    font-variation-settings: "SEIS" 0, "wght" 500;
+font-style: normal;
+font-size: 300%;
+text-decoration: underline;
+color: #003399;
+    display: grid;
+    grid-template-columns: 1fr;
+     justify-items: center;
+margin-left: 140px;
+margin-right: 140px;
+margin-top: 60px;
+margin-bottom: 0.5em;
+} */
+  
+  .draggable-section {
+    color: white;
+    display: flex;
+   flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    height: 100vh; /* Set the height as needed */
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 120px;
+    padding-bottom: 5px;
+  }
+  
+  .draggable-image {
+    /* position: absolute; */
+    width: 120px; /* Adjust the width as needed */
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .clickable-image {
+    color: white;
+    width: 100%;
+    height: auto;
+  }
+  
+  .draggable-image p {
+    color: white;
+    margin: 5px 0;
+  }
+  
+  /* Add styles for the dragging effect */
+  .draggable-image.dragging {
+    opacity: 0.5; /* Adjust the opacity as needed during dragging */
+  }
+
+  .image-container {
+    display: flex;
+    margin-top: 0.5em;
+    /* Other flex properties and styles as needed */
+  }
+  
+  .image {
+    width: 48%; /* Two images per row with a small gap */
+    /* Other styles for your images */
+  }
+  
+  /* Media query for screens smaller than a certain width (e.g., 600px) */
+  
+  @media (max-width: 600px) {
+
+    li {
+      padding-right: 20px;
+    }
+
+    .nav-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      list-style: none;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 0;
+    }
+
+    .nav-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: row;
+    }
+
+    .nav-list a {
+      font-family: "panel-mono", monospace;
+      font-weight: 100;
+      font-style: italic;
+          font-size: 20px;
+      color: white;
+    }
+
+    nav a:hover {
+      background-color: white;
+      color: black;
+  }
+
+    .draggable-section {
+      flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    }
+  
+    .image {
+      width: 50%; /* One image per row on smaller screens */
+    }
+
+    video {
+     display: none;
+    }
+
+    body {
+      background-color: black;
+    }
+  }

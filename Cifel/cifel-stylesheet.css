@@ -1,0 +1,190 @@
+html, body {
+    width: 100%; /* Sets the body's width to 100% of the viewport */
+    height: 100vh;
+    margin: 0px; /* Centers the body horizontally within the viewport */
+    padding: 0px; /* Remove default body padding */
+    box-sizing: border-box; /* Includes padding and border within the body's total width */
+    overflow-x: hidden;
+}
+
+hr {
+    color: black;
+    size: 10px;
+}
+
+h2 {
+    font-family: "seismic-latin-variable", sans-serif;
+    font-variation-settings: "SEIS" 0, "wght" 500;
+    font-size: 150%;
+    color: black; 
+}
+
+h3 {
+    font-family: "seismic-latin-variable", sans-serif;
+    font-variation-settings: "SEIS" 0, "wght" 400;
+    font-size: 150%;
+    color: black;   
+}
+
+
+p {
+    font-family: "alfabet", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+            font-size: 120%;
+            color: black;  
+}
+
+.invert-on-hover:hover {
+    filter: invert(100%);
+}
+
+/* Header Section */
+.heading {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+
+@media (max-width: 768px) {
+    .heading {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 769px) {
+    .header {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.underline-animation {
+    max-width: 70%;
+    height: auto;
+    text-align: left;
+    position: relative;
+    text-align: left;
+    font-family: "seismic-latin-variable", sans-serif;
+    font-variation-settings: "SEIS" 0, "wght" 500;
+    font-size: 400%;
+    color: black;    
+}
+
+.underline-animation::before {
+    content: "";
+    width: 100%;
+    height: 2px; /* Adjust the underline thickness */
+    background-color: black; /* Underline color */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0); /* Initial scale to hide the underline */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.underline-animation:hover::before {
+    transform: scaleX(1); /* Expand the underline on hover */
+    transform-origin: bottom left;
+}
+
+.name {
+        max-width: 100%;
+        height: auto;
+        text-align: left;
+        font-family: "seismic-latin-variable", sans-serif;
+        font-variation-settings: "SEIS" 0, "wght" 400;
+        font-size: 400%;
+        color: black; 
+}
+
+/* Header Image */
+.cifel-image-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 100px;
+    padding-left: 100px;
+    justify-items: center;
+}
+
+.cifel-image-header img {
+    max-width: 70%;
+    max-height: auto;
+}
+
+/* Header Subheadings */
+.subheadings {
+    display: grid;
+    grid-template-columns: 1fr;
+   padding-top: 5px;
+   padding-bottom: 15px;
+   padding-left: 100px;
+   padding-right: 100px;
+}
+
+.subheadings-text {
+    font-family: "seismic-latin-variable", sans-serif;
+    font-variation-settings: "SEIS" 0, "wght" 400;
+    font-size: 150%;
+    color: black;    
+}
+
+/* Question Section */
+.question-section {
+    display: grid;
+    grid-template-columns: 1fr;
+   padding-top: 30px;
+   padding-bottom: 15px;
+   padding-left: 100px;
+   padding-right: 100px;
+   align-items: left;
+justify-content: center;
+}
+
+ /* Inspiration Section */
+ .inspiration {
+    max-width: 100%; /* Adjust the maximum width as needed */
+    margin: 0;
+padding-top: none;
+padding-bottom: 20px;
+padding-left: 100px;
+padding-right: 100px;
+}
+
+#cifel-inspo-heading {
+    font-family: "seismic-latin-variable", sans-serif;
+    font-variation-settings: "SEIS" 0, "wght" 500;
+font-style: normal;
+font-size: 200%;
+color: black;    
+}
+
+ .gallery-inspiration {
+    width: auto; /* Set the desired width for the gallery container */
+    height: auto; /* Set the desired height for the gallery container */
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid with flexible columns */
+     gap: 50px; /* Adjust the gap between images as needed */
+     justify-items: center;
+}
+
+.image-item-inspiration {
+    max-width: 100%;
+    height: auto;
+    display: grid; 
+}
+
+.image-item-inspiration img {
+    width: 100%;
+    height: auto;
+}
+
+

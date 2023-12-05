@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+
+    <script>
+      let list = document.querySelector(".container");
+
+      window.addEventListener("click", addNew);
+
+      function addNew() {
+        let ni = document.createElement("img");
+        ni.src = "https://picsum.photos/200/300";
+        let z = -45 + Math.random() * 90;
+        //console.log(x);
+        ni.style.left = Math.random() * 800 + "px";
+        ni.style.top = Math.random() * 600 + "px";
+        ni.style.transform = "rotate(" + z + "deg)";
+        list.appendChild(ni);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+html, body {
+  width: 100%; /* Sets the body's width to 100% of the viewport */
+  height: 100vh;
+  margin: 0px; /* Centers the body horizontally within the viewport */
+  padding: 0px; /* Remove default body padding */
+  box-sizing: border-box; /* Includes padding and border within the body's total width */
+  overflow-x: hidden;
+}
+
+header {
+position: relative;
+}
+
+  .neon-sign {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "panel-mono", monospace;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2em;
+    color: white;
+    background-color: #003399;
+    margin: 15px;
+    white-space: nowrap;
+    animation: neon-scroll 45s linear infinite;
+  }
+
+  @keyframes neon-scroll {
+    0% {
+      transform: translateX(10%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .manifesto-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    justify-content: center;  
+}
+
+.manifesto-text-container {
+    flex: 1;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: center;
+    background-color:white;
+}
+
+.manifesto-image-container {
+    flex: 1;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+    text-align: center;
+}
+
+.manifesto-image-container video {
+  align-items: center;
+  width: 500px;
+  height: auto;
+}
+
+.aManifesto {
+    font-family: "seismic-latin-variable", sans-serif;
+    font-variation-settings: "SEIS" 0, "wght" 600;
+        font-size: 400%;
+        color: black;  
+}
+
+
+.manifesto-text {
+  font-family: "panel-mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+        font-size: 140%;
+        color: black;
+      }
+
+
+.manifesto-gallery {
+        width: auto; /* Set the desired width for the gallery container */
+       height: auto; /* Set the desired height for the gallery container */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grid with flexible columns */
+        gap: 20px; /* Adjust the gap between images as needed */
+        padding-top: 20px;
+        padding-bottom: 20px;
+       padding-left: 5%;
+       padding-right: 5%;
+       padding-bottom: 20px;
+       color: white;
+        background-color: #003399;
+        position: relative;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .image-item img {
+     justify-content: center;
+        max-width: 100%;
+        max-height: auto;
+    }
+    
+    .image-item {
+        display: inline-block;
+        position: relative;
+    }
+    
+    .wiggle-on-hover {
+        transition: transform 0.2s ease-in-out;
+    }
+    
+    .wiggle-on-hover:hover {
+        animation: wiggle 0.4s ease-in-out infinite;
+    }
+
+    a {
+      color: white;
+    }
+
+    a:hover {
+      color: white;
+    }
+
+
+
+
+
